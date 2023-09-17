@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Cart
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+{% endblock %}
+
+{% block content %}
+    <!-- Header -->
+    <header class="flex px-[15px] justify-between items-center h-64 bg-blue-700">
+        <a href="/" class="inline">
+            <img class="h-[40px] w-[115px] rounded-md" src="{%static 'image/logo.png'%}" alt="Logo">
+        </a>
+
+        <div class="w-2/6">
+            <form action="" class="w-full flex">
+                <button class="btn-search w-[50px] bg-stone-900 border-solid border-2 border-slate-950 border-r-0 rounded-l-md px-[5px] py-[3px]">
+                    <i class="fa-solid fa-magnifying-glass icon__search text-white"></i>
+                </button>
+                <input class="w-full border-solid border-2 border-slate-950 rounded-r-md outline-0 px-[5px] py-[3px]" type="text" placeholder="Nhap">
+            </form>
+        </div>
+
+        <ul class="header-menu flex items-center text-white">
+            <li class="mr-[15px] px-[5px]">
+                <a href="" class="flex">
+                    <span class="icon-check-cart text-white pr-[8px] text-[24px] mt-[12px]">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </span>
+                    <span class="block w-[72px]">
+                        Tra Cuu Don Hang
+                    </span>
+                </a>
+            </li>
+
+            <li class="mr-[15px] px-[5px]">
+                <a href="/cart" class="flex">
+                    <span class="icon-cart pr-[8px] text-[24px] mt-[12px]">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span class="block w-[40px]">
+                        Gio Hang
+                    </span>
+                </a>
+            </li>
+
+            <li class="px-[5px]">
+                <a href="">
+                    <span class="icon-login block text-center">
+                        <i class="fa-regular fa-user"></i>
+                    </span>
+                    <span>
+                        Dang Nhap
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section One -->
+    <section class="px-[15px] py-[10px] bg-zinc-200">
+        <!-- Header -->
+        <div class="header pb-[15px] pt-[10px] mb-[15px] bg-white border-b border-gray-800">
+            <div class="header-name">
+                <p class="">
+                    <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                </p>
+            </div>
+        </div>
+        <!-- End Header -->
+        <div class="container flex">
+            <!-- Left Row -->
+            <div class="left-row w-[calc(50%-5px)] mr-[10px]">
+                <div class="left-row-img">
+                    <img class="w-full rounded-md border-2 border-rose-700" src="{%static 'image/asus_product.png'%}" alt="">
+                </div>
+                <!-- Product Config -->
+                <!-- End Product Config -->
+            </div>
+            <!-- End Left Row -->
+            <!-- Right Row -->
+            <div class="right-row w-[calc(50%-5px)] pl-[10px]">
+                <div class="product-price">
+                    <p class="text-[24px] text-red-600">
+                        <strong>19.790.000₫</strong>
+                    </p>
+                </div>
+                <div class="left-row-config bg-slate-300 rounded-md mt-[5px] px-[15px]">
+                    <p class="mb-[10px]">14.0 inch, 1920 x 1080 Pixels, IPS, 60 Hz, 250 nits, LED Backlit</p>
+                    <p class="mb-[10px]">AMD, Ryzen 5, 7520U</p>
+                    <p class="mb-[10px]">16 GB, LPDDR5, 5500 MHz</p>
+                    <p class="mb-[10px]">SSD 512 GB</p>
+                    <p class="mb-[10px]">AMD Radeon Graphics</p>
+                    <a class="inline-block mb-[10px]" href="">
+                        <p class="text-blue-700">
+                            Xem chi tiết thông số kỹ thuật
+                        </p>
+                    </a>                    
+                </div>
+                <div class="product-info bg-slate-50 rounded-md mt-[5px] px-[15px]">
+                    <h2 class="mb-[10px]">Thông tin sản phẩm</h2>
+                    <p class="mb-[10px]">Máy mới 100%, đầy đủ phụ kiện từ nhà sản xuất.</p>
+                    <p class="mb-[10px]">Thân máy, cáp sạc, sách HDSD</p>
+                    <p class="mb-[10px]">1 ĐỔI 1 trong 30 ngày nếu có lỗi phần cứng nhà sản xuất.</p>
+                    <p class="">Giá sản phẩm đã bao gồm VAT</p>
+                </div>
+            </div>
+            <!-- End Right Row -->
+        </div>
+        <!-- Button Buy -->
+        <div class="btn text-center flex justify-center mt-[10px]">
+            <div class="btn-buy bg-red-500 rounded-md w-[351x] px-[15px]">
+                <a href="" class="text-white">
+                    <p class="text-[28px]">Mua ngay</p>
+                    <p class="text-[18px]">Giao hang mien phi hoac nhan tai shop</p>
+                </a>
+            </div>
+            <div class="btn-add-cart bg-white ml-[10px] px-[15px] py-[7px] border-2 rounded-lg  border-red-700 overflow-hidden">
+                <button class="text-center w-[60px] h-[46px] flex-col justify-items-center">
+                    <img class="bg-white mx-auto w-[24px] h-[30px]" src="https://cdn2.cellphones.com.vn/50x,webp,q70/media/wysiwyg/add-to-cart.png" alt="">
+                    <span class="text-[9px] text-red-500">Them vao gio</span>
+                </button>
+            </div>
+        </div>
+        <!-- End Button Buy -->
+    </section>
+    <!-- End Section One -->
+
+    <!-- Footer -->
+    <footer class="footer bg-gray-100 px-[15px] py-[10px]">
+        <div class="social">
+            <span class="">Kết nối với chúng tôi:</span>
+            <a href="">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+{% endblock %}

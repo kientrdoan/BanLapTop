@@ -1,0 +1,661 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+{% endblock %}
+
+{% block content %}
+    <!-- Header -->
+    <header class="flex px-[15px] justify-between items-center h-64 bg-blue-700">
+        <a href="/" class="inline">
+            <img class="h-[40px] w-[115px] rounded-md" src="{%static 'image/logo.png'%}" alt="Logo">
+        </a>
+
+        <div class="w-2/6">
+            <form action="" class="w-full flex">
+                <button class="btn-search w-[50px] bg-stone-900 border-solid border-2 border-slate-950 border-r-0 rounded-l-md px-[5px] py-[3px]">
+                    <i class="fa-solid fa-magnifying-glass icon__search text-white"></i>
+                </button>
+                <input class="w-full border-solid border-2 border-slate-950 rounded-r-md outline-0 px-[5px] py-[3px]" type="text" placeholder="Nhap">
+            </form>
+        </div>
+
+        <ul class="header-menu flex items-center text-white">
+            <li class="mr-[15px] px-[5px]">
+                <a href="" class="flex">
+                    <span class="icon-check-cart text-white pr-[8px] text-[24px] mt-[12px]">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </span>
+                    <span class="block w-[72px]">
+                        Tra Cuu Don Hang
+                    </span>
+                </a>
+            </li>
+
+            <li class="mr-[15px] px-[5px]">
+                <a href="/cart" class="flex">
+                    <span class="icon-cart pr-[8px] text-[24px] mt-[12px]">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span class="block w-[40px]">
+                        Gio Hang
+                    </span>
+                </a>
+            </li>
+
+            <li class="px-[5px]">
+                <a href="">
+                    <span class="icon-login block text-center">
+                        <i class="fa-regular fa-user"></i>
+                    </span>
+                    <span>
+                        Dang Nhap
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section One -->
+    <section class="px-[15px] py-[5px] bg-zinc-200 flex justify-center">
+        <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt="">
+    </section>
+    <!-- End Section One -->
+
+    <!-- Section Two -->
+    <section class="px-[15px] py-[5px] bg-zinc-200 flex">
+        <!-- Laptop theo nhu cau -->
+        <ul class="w-[50%] mr-[15px] list-group flex flex-wrap justify-evenly bg-white rounded-md">
+            <li class="w-full px-[10px] flex items-center bg-orange-500 rounded-md">
+                <h2 class="text-[24px]">Chọn theo nhu cầu</h2>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/vanphong.png'%}" alt="">
+                    <span class="block text-center">Văn phòng</span>
+                </a>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/sinhvien.png'%}" alt="">
+                    <span class="block text-center">Sinh vien</span>
+                </a>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/dohoa.png'%}" alt="">
+                    <span class="block text-center">Thiet ke do hoa</span>
+                </a>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/mongnhe.png'%}" alt="">
+                    <span class="block text-center">Mong nhe</span>
+                </a>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/gaming.png'%}" alt="">
+                    <span class="block text-center">Gaming</span>
+                </a>
+            </li>
+           
+        </ul>
+
+        <!-- Laptop theo hang -->
+        <ul class="w-[50%] list-group flex flex-wrap justify-evenly bg-white rounded-md">
+            <li class="w-full px-[10px] flex items-center bg-orange-500 rounded-md">
+                <h2 class="text-[28px]">Chọn theo hang</h2>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/macbook.png'%}" alt="">
+                </a>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/asus.png'%}" alt="">
+                </a>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/hp.png'%}" alt="">
+                </a>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/lenovo.png'%}" alt="">
+                </a>
+            </li>
+
+            <li class="px-[5px] mt-[5px] flex items-center hover:bg-zinc-400 hover:rounded-md">
+                <a href="" class="block w-[100%]">
+                    <img class="w-[100px] rounded-full" src="{%static 'image/acer.png'%}" alt="">
+                </a>
+            </li>
+           
+        </ul>
+        <!-- End Tim Kiem Nhanh -->
+    </section>
+    <!-- End Section Two -->
+
+    <!-- Section Three -->
+    <section class="product bg-zinc-200 px-[15px] py-[5px] flex flex-wrap">
+        <h2 class="block w-full px-[15px] mb-[10px] bg-orange-500 rounded-md text-[24px]">San Pham</h2>
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="/product">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- End Row 1 -->
+          <!-- Item -->
+          <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- End Row 2 -->
+          <!-- Item -->
+          <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md mr-[10px] hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="product-item mb-[10px] w-[calc(20%-8px)] bg-white px-[12px] py-[12px] rounded-md hover:border">
+            <div class="product-img text-center rounded border-2 border-rose-700 mb-[15px]">
+                <a href="">
+                    <img class="" src="{%static 'image/HP_Pavilion_Aero_13-be2098AU.png'%}" alt="">
+                </a>
+            </div>
+            <div class="product-name mb-[10px]">
+                <a href="">
+                    <p class="hover:text-blue-700">
+                        <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    </p>
+                </a>
+            </div>
+            <div class="product-price mb-[10px]">
+                <span class="block text-center text-[18px] rounded-3xl bg-red-700 text-white w-[130px] h-[28px]">19.790.000 ₫</span>
+            </div>
+            <div class="product-info text-[14px] bg-gray-400">
+                <span class="screen inline-block mr-[10px] mb-[9px]">15.6 inch</span>
+                <span class="cpu inline-block mr-[10px] mb-[9px]">Core i5</span> 
+                <span class="gam inline-block mr-[10px] mb-[9px]">16 GB (2 thanh 8 GB)</span>
+                <span class="disk inline-block mr-[10px] mb-[9px]">SSD 512 GB</span>
+                <span class="card inline-block mr-[10px] mb-[9px]">NVIDIA GeForce RTX 2050 4GB</span>
+                <span class="weight inline-block mb-[9px]">2.3 kg</span>
+            </div>
+            <div class="btn-buy bg-red-500 mt-[25px] rounded-md hover:bg-red-950">
+                <a class="block h-[36px] flex items-center justify-center" href="">
+                    <span class="block text-center text-white text-[22px]"> Mua ngay</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Item -->
+        <!-- End Row 3 -->
+    </section>
+    <!-- End Section Three -->
+
+    <!-- Section Four -->
+    <footer class="footer bg-gray-100 px-[15px] py-[10px]">
+        <div class="social">
+            <span>Kết nối với chúng tôi:</span>
+            <a href="">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- End Section Four -->
+
+{% endblock %}
