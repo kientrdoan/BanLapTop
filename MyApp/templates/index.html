@@ -50,7 +50,7 @@
             </li>
 
             <li class="px-[5px]">
-                <a href="">
+                <a href="" id="" class="hidden">
                     <span class="icon-login block text-center">
                         <i class="fa-regular fa-user"></i>
                     </span>
@@ -58,6 +58,39 @@
                         Dang Nhap
                     </span>
                 </a>
+
+                <div class="login-info-block relative">
+
+                    <div id="login-name-block" class="cursor-pointer">
+                        <span class="icon-login block text-center">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <p>Doan Trung Kien</p>
+                    </div>
+
+                    <div id="sub-menu-login-block" 
+                    class="hidden absolute w-[172px] top-[56px] right-0 px-[10px] py-[5px] bg-white text-black before:content-[''] before:absolute before:border-[11px] before:border-t-transparent before:border-r-transparent before:border-b-white before:border-l-transparent before:top-[-20px] before:right-[46px]">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-user"></i>
+                                    Thông tin cá nhân
+                                </a>
+                            </li>
+                            <li>
+                                <a href="order">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    Hóa đơn của tôi
+                                </a> 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Đăng xuất
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </li>
         </ul>
     </header>
@@ -65,7 +98,30 @@
 
     <!-- Section One -->
     <section class="px-[15px] py-[5px] bg-zinc-200 flex justify-center">
-        <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt="">
+        {% comment %} <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt=""> {% endcomment %}
+        <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                <
+              </button>
+              <ul class="image-list">
+                <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt="">
+                <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt="">
+                <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt="">
+                <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt="">
+                <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt="">
+                <img class="w-full" src="{%static 'image/carousel_1.png'%}" alt="">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                >
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
     </section>
     <!-- End Section One -->
 
@@ -657,5 +713,7 @@
         </div>
     </footer>
     <!-- End Section Four -->
-
+    
+    <script src="{%static 'js/index.js'%}">
+    </script>
 {% endblock %}

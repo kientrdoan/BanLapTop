@@ -64,7 +64,7 @@
     <!-- End Header -->
 
     <!-- Section One -->
-    <section class="px-[15px] pb-[36px] bg-zinc-200">
+    <section class="no-cart hidden px-[15px] pb-[36px] bg-zinc-200">
         <div class="cart-back flex items-center text-blue-700 py-[10px]">
             <i class="fa-solid fa-chevron-left text-[14px] w-[14px]"></i>
             <a href="/">
@@ -90,6 +90,67 @@
     </section>
     <!-- End Section One -->
 
+    <!-- Section Two -->
+    <section class="have-cart bg-zinc-200 px-[15px] py-[10px]">
+
+        <div class="header-cart max-w-[600px] flex mx-auto">
+            <div class="cart-go-back">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="cart-title mx-auto">
+                <strong>Giỏ hàng của bạn</strong>
+            </div>
+        </div>
+
+        <div class="select-all mt-[18px] mb-[10px] max-w-[600px] mx-auto flex items-end">
+            <input class="w-[16px] h-[20px] rouded-full" type="checkbox" name="" id="">
+            <h2 class="ml-[10px]">Chon tat ca</h2>
+        </div>
+        <div class="cart-list-item bg-white max-w-[600px] mx-auto rounded-md">
+            <div class="block-item-outer px-[10px]">
+                <div class="block-item py-[10px] flex items-start">
+                    <div class="checkbox-product flex">
+                        <input class="w-[16px] h-[20px]" type="checkbox" name="" id="">
+                        <img  class="min-w-[81px] max-w-[81px] px-[25px] box-content" src="https://cdn2.cellphones.com.vn/358x,webp,q100/media/catalog/product/m/k/mkt_odin_product_lmage_fluoroelastomer_front_30_right_en_hq_png_800x800_20220403.png" alt="image-product">
+                    </div>
+                    <div class="product-info w-full">
+                        <div class="flex justify-between items-start">
+                            <a href="" class="block w-[70%] product-link">Đồng hồ thông minh Huawei Watch GT3 Pro -Đen</a>
+                            <button class="remove">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        <div class="flex justify-between items-end h-[31px]">
+                            <div class="block-box-price">
+                                <p>7.490.000đ</p>
+                            </div>
+                            <div class="action-desc-asc">
+                                <span class="minus w-[30px] h-[30px]">-</span>
+                                <input class="quality w-[36px]" type="text" readonly="readonly">
+                                <span class="plus w-[30px] h-[30px]">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-total-price mt-[25px] max-w-[600px] mx-auto">
+            <div class="price-buy flex justify-between items-start">
+                <div class="price-temp">
+                    <h2>Tam tinh</h2>
+                    <p class="price">
+                        gia tam
+                    </p>
+                </div>
+                <div class="btn-buy bg-gray-500 rounded-md">
+                    <button class="block h-[40px] px-[20px] py-[5px]">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Two -->
+
     <!-- Footer -->
     <footer class="footer bg-gray-100 px-[15px] py-[25px]">
         <div class="social">
@@ -103,5 +164,7 @@
         </div>
     </footer>
     <!-- End Footer -->
-
+    <script type="module" src="{%static 'js/cart.js'%}">
+    </script>
 {% endblock %}
+

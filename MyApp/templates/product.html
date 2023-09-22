@@ -69,7 +69,7 @@
         <div class="header pb-[15px] pt-[10px] mb-[15px] bg-white border-b border-gray-800">
             <div class="header-name">
                 <p class="">
-                    <strong>Laptop HP Pavilion Aero 13-be2098AU</strong>    
+                    <strong id="product-name">Laptop HP Pavilion Aero 13-be2098AU</strong>    
                 </p>
             </div>
         </div>
@@ -78,7 +78,7 @@
             <!-- Left Row -->
             <div class="left-row w-[calc(50%-5px)] mr-[10px]">
                 <div class="left-row-img">
-                    <img class="w-full rounded-md border-2 border-rose-700" src="{%static 'image/asus_product.png'%}" alt="">
+                    <img id="product-img" class="w-full rounded-md border-2 border-rose-700" src="{%static 'image/asus_product.png'%}" alt="">
                 </div>
                 <!-- Product Config -->
                 <!-- End Product Config -->
@@ -86,11 +86,12 @@
             <!-- End Left Row -->
             <!-- Right Row -->
             <div class="right-row w-[calc(50%-5px)] pl-[10px]">
-                <div class="product-price">
+                <div class="product-price-block">
                     <p class="text-[24px] text-red-600">
-                        <strong>19.790.000₫</strong>
+                        <strong id="product-price">19.790.000₫</strong>
                     </p>
                 </div>
+
                 <div class="left-row-config bg-slate-300 rounded-md mt-[5px] px-[15px]">
                     <p class="mb-[10px]">14.0 inch, 1920 x 1080 Pixels, IPS, 60 Hz, 250 nits, LED Backlit</p>
                     <p class="mb-[10px]">AMD, Ryzen 5, 7520U</p>
@@ -103,6 +104,7 @@
                         </p>
                     </a>                    
                 </div>
+
                 <div class="product-info bg-slate-50 rounded-md mt-[5px] px-[15px]">
                     <h2 class="mb-[10px]">Thông tin sản phẩm</h2>
                     <p class="mb-[10px]">Máy mới 100%, đầy đủ phụ kiện từ nhà sản xuất.</p>
@@ -114,14 +116,14 @@
             <!-- End Right Row -->
         </div>
         <!-- Button Buy -->
-        <div class="btn text-center flex justify-center mt-[10px]">
+        <div class="block-btn text-center flex justify-center mt-[10px]">
             <div class="btn-buy bg-red-500 rounded-md w-[351x] px-[15px]">
                 <a href="" class="text-white">
                     <p class="text-[28px]">Mua ngay</p>
                     <p class="text-[18px]">Giao hang mien phi hoac nhan tai shop</p>
                 </a>
             </div>
-            <div class="btn-add-cart bg-white ml-[10px] px-[15px] py-[7px] border-2 rounded-lg  border-red-700 overflow-hidden">
+            <div id="add" class="btn-add-cart bg-white ml-[10px] px-[15px] py-[7px] border-2 rounded-lg  border-red-700 overflow-hidden">
                 <button class="text-center w-[60px] h-[46px] flex-col justify-items-center">
                     <img class="bg-white mx-auto w-[24px] h-[30px]" src="https://cdn2.cellphones.com.vn/50x,webp,q70/media/wysiwyg/add-to-cart.png" alt="">
                     <span class="text-[9px] text-red-500">Them vao gio</span>
@@ -145,5 +147,6 @@
         </div>
     </footer>
     <!-- End Footer -->
-
+    <script type= "module" src="{%static 'js/product.js'%}">
+    </script>
 {% endblock %}

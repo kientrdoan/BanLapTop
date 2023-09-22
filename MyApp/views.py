@@ -9,3 +9,9 @@ def get_cart(request):
 
 def get_product(request):
     return render(request, 'product.html')
+
+def get_order(request):
+    return render(request, 'order.html')
+
+def get_order_detail(request):
+    return render(request, 'orderdetail.html')
